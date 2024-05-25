@@ -4,7 +4,7 @@
             /* Load the flappybird font from an external source */
             @font-face {
                 font-family: flappybird;
-		src: url('http://www.mediafont.com/storage/contents/3184/font.eot'); /* IE */ 
+                src: url('http://www.mediafont.com/storage/contents/3184/font.eot'); /* IE */ 
                 src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); /* non-IE */ 
             }
             
@@ -22,17 +22,19 @@
 			}
 			#Birdy{
                 /* Ratio is about 1.449 (Width/Height) */
-		width: 6%;
-        height: 11%;
+		width: 2.9%;
                 padding-bottom: 2%;
                 
-                background-image:url('Among us.jpg');
                 
-                background-size: 100%; /* Make the width 300% of the current width, so that only 1 frame fits and the other 2 frames are hidden */
+                background-image: url('http://flappybird.io/img/bird.png');
+                
+                background-size: 300%; /* Make the width 300% of the current width, so that only 1 frame fits and the other 2 frames are hidden */
+				
 				position:absolute; /* Absolutely positioned, so it's out of flow of regular elements, position wherever we'd like */
-				top: 0%; /* We're going to be around middle of the screen (a bit lower due to height)*/
+				top: 50%; /* We're going to be around middle of the screen (a bit lower due to height)*/
 				left: 20%; /* We're going to be at around 20% left of the screen */
-                z-index: 1000; /* Display in front of pipes even after getting hit by them */
+                
+                z-index: 150; /* Display in front of pipes even after getting hit by them */
 			}
             
             .FallenBirdy{
